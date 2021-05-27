@@ -144,9 +144,9 @@ python -m venv mysite
 > ```bash
 > (mysite) bin$
 > ```
-> 가상 환경을 끄고 싶다면면 source ./deactivate를 입력하면 됩니다.
+> 가상 환경을 끄고 싶다면면 같은 위치에서 deactivate를 입력하면 됩니다.
 > ```bash
-> source ./deactivate
+> deactivate
 
 # 3. Django를 설치하고 가상 환경 단축키를 생성하기
 ## 3.1. Django 설치
@@ -217,8 +217,8 @@ python -m venv mysite
 > - 그리고 이렇게 수정해봅시다.
 > ```bash
 > #!/bin/bash
-> cd /venvs
-> /venvs/mysite/bin/source .activate
+> cd /(본인이 venvs를 저장한 폴더의 경로)/venvs/mysite/bin
+> source .activate
 > ```
 > 그리고 저장합니다.
 
@@ -245,7 +245,7 @@ python -m venv mysite
 **나. 맥os의 경우**
 > 아래처럼 입력합니다.
 > ```bash
-> sh snumental_21_1.sh
+> source snumental_21_1.sh
 > ```
 > 이제, 아래처럼 가상 환경에 진입한 것이 확인됩니다.
 > ```bash
